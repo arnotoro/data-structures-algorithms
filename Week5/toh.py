@@ -1,12 +1,13 @@
-def towerOfHanoi(n, start, finish, extra):
+def towerOfHanoi(n, start, finish, extra, counter=0):
+    counter += 1
     if(n == 1):
         print("Move disk 1 from rod",start,"to rod",finish)
-        return
-    towerOfHanoi(n-1, start, extra, finish)
+        return counter
+    towerOfHanoi(n-1, start, extra, finish, counter)
     print("Move disk",n,"from rod",start,"to rod",finish)
-    towerOfHanoi(n-1, extra, finish, start)
+    towerOfHanoi(n-1, extra, finish, start, counter)
 
 
 
 disks = int(input("How many disks: "))
-towerOfHanoi(disks,'A','C','B')
+count = towerOfHanoi(disks,'A','C','B')
