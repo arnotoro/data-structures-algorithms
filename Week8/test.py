@@ -10,5 +10,5 @@ def algorithm(L):
     return (4 * k) /L
 
 
-print(algorithm(100))
+print(algorithm(10000000))
 
