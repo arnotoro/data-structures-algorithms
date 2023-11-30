@@ -6,11 +6,15 @@ INF = 9999999
 V = 8
 # create a 2d array of size 5x5
 # for adjacency matrix to represent graph
-G = [[0, 9, 75, 0, 0],
-     [9, 0, 95, 19, 42],
-     [75, 95, 0, 51, 66],
-     [0, 19, 51, 0, 31],
-     [0, 42, 66, 31, 0]]
+G = [[0, 0, 0, 0, 15, 10, 0, 13],
+     [0, 0, 0, 0, 3, 11, 0, 0],
+     [0, 0, 0, 0, 11, 2, 6, 0],
+     [0, 0, 0, 0, 10, 0, 0, 0],
+     [15, 3, 11, 10, 0, 0, 5, 3],
+     [10, 11, 2, 0, 0, 0, 0, 0],
+     [0, 0, 6, 0, 5, 0, 0, 0],
+     [13, 0, 0, 0, 3, 0, 0, 0]
+     ]
 # create a array to track selected vertex
 # selected will become true otherwise false
 selected = [0, 0, 0, 0, 0]
